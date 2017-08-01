@@ -1,0 +1,159 @@
+/* body tags containing the basic styling guidelines. */
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Styling of the header, ensuring its postion is fixed and it has a decent z-index. */
+#header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  margin: 0 0;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  justify-content: space-between;
+  padding-left: 10px;
+  align-items: center;
+  z-index: 10;
+  background-color: black;
+}
+
+#logoImg {
+  height: 50px;
+}
+
+#header #headerNav a {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  text-decoration: underline;
+  padding-right: 30px;
+}
+
+/* Styling of the mission section, arranging the banner to lie in the center over the image. */
+#mission {
+  display: flex;
+  background-image: url(../images/img-mission-background.jpg);
+  height: 700px;
+  width: 1200px;
+  position: relative;
+  top: 70px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.missionBanner {
+  background-color: black;
+  width: 1200px;
+  height: 100px;
+}
+
+.missionBanner h2,
+.missionBanner h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styling of the 'featured' section, with the help of nesting flex containers. */
+#featured {
+  position: relative;
+  top: 70px;
+  margin: 60px auto;
+  width: 1000px;
+}
+
+#featured .imagesArray {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  padding: 0 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.imgBox {
+  width: 333px;
+  margin: 0 0;
+  text-align: center;
+}
+
+.imgBox img {
+  width: 300px;
+  height: 200px;
+  padding: 0 0;
+  margin-bottom: 10px;
+}
+
+.imgBox h4 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+ /* Styling of the section outlining the shop's different locations, again by using nesting flex containers. */
+#locations {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../images/img-locations-background.jpg);
+  height: 600px;
+  width: 1200px;
+  position: relative;
+  top: 70px;
+  margin: 10px auto;
+}
+
+#locations h2 {
+  padding-bottom: 0;
+  margin-bottom: 15px;
+}
+
+.areas {
+  display: inline-flex;
+  width: 980px;
+  height: 300px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.locBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  width: 300px;
+  margin: 0 0;
+  text-align: center;
+  opacity: 1;
+  background-color: black;
+}
+
+/* Brief styling of the contact section */
+#contact {
+  display: flex;
+  position: relative;
+  top: 70px;
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Brief styling of the copyright section */
+#copyright {
+  position: relative;
+  top: 150px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: left;
+}
